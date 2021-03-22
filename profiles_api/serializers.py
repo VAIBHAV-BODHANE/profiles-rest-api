@@ -13,7 +13,7 @@ class UserProfileSerializer(serializers.ModelSerializer):
 
     class Meta:
 
-        models = models.userProfile
+        model = models.userProfile
         fields = ('id', 'email', 'name', 'password')
         extra_kwargs = {
             'password': {
